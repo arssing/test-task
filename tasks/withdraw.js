@@ -1,7 +1,7 @@
 const DonationsArtifact = require("../artifacts/contracts/Donations.sol/Donations.json")
 
 //address in rinkeby: 0x5e700d4a22fd43e1a0b185b68c937b09bb2752c3
-//use: --contractaddress 0x5e700d4a22fd43e1a0b185b68c937b09bb2752c3 --address <address-to-withdraw> --amount 0.01 --network rinkeby
+//use: npx hardhat withdraw --contractaddress 0x5e700d4a22fd43e1a0b185b68c937b09bb2752c3 --address <address-to-withdraw> --amount 0.01 --network rinkeby
 
 task("withdraw", "Withdraw amount to address")
   .addParam("contractaddress", "contract address with we will interact")
