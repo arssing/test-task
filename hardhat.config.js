@@ -7,10 +7,13 @@ require("dotenv").config()
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  defaultNetwork: "localhost",
+  defaultNetwork: "hardhat",
   solidity: "0.8.4",
 
   networks: {
+    hardhat: {
+      chainId: 31337,
+    },
     localhost: {
       chainId: 31337,
     },
